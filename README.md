@@ -1,20 +1,10 @@
-<<<<<<< Updated upstream
 # Practice Best React Codding Interview Challenges.
 
-* ## React Coding Challenge No. 1
-
-📞 React Phone Book Project
-
-The React Phone Book project is a simple yet functional phone book application built using React. It allows users to add, edit, and delete contacts, as well as search for specific contacts. The project aims to demonstrate the use of React components, state management, and form handling.
-
-🚀 Getting Started
-=======
 📞 **React Phone Book Project**
 
 The React Phone Book project is a **simple yet functional phone book application** built using React. It allows users to add, edit, and delete contacts, as well as search for specific contacts. The project aims to demonstrate the use of React components, state management, and form handling.
 
 🚀 **Getting Started**
->>>>>>> Stashed changes
 
 To get started with the React Phone Book project, follow the steps below:
 
