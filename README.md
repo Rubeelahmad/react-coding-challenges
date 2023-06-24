@@ -11,22 +11,18 @@ To get started with the React Phone Book project, follow the steps below:
 1. **Clone the repository**:
    ```
    git clone https://github.com/Rubeelahmad/react-coding-challenges/tree/React-Phone-Book-Coding-Challenge
-   
    ```
 2. **Navigate to the project directory**:
    ```
    cd react-phone-book
-   
    ```
 3. **Install the dependencies**:
    ```
    npm install
-   
    ```
 4. **Start the development server**:
    ```
    npm start
-   
    ```
 5. **Open your web browser** and visit `http://localhost:3000` to access the Phone Book application.
 
