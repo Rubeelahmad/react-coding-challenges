@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import ContactForm from './components/ContactForm.tsx';
+import ContactList from './components/ContactList.tsx';
+import SearchBar from './components/SearchBar.tsx';
 
-function App() {
+const App = () => {
+  const [contacts, setContacts] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [editIndex, setEditIndex] = useState(-1);
+
+  const addContact = (contact) => {
+    if (editIndex !== -1) {
+      const updatedContacts = [...contacts];
+      updatedContacts[editIndex] = contact;
+      setContacts(updatedContacts);
+      setEditIndex(-1);
+    } else {
+      setContacts([...contacts, contact]);
+    }
+  };
+
+  const deleteContact = (index) => {
+    const updatedContacts = [...contacts];
+    updatedContacts.splice(index, 1);
+    setContacts(updatedContacts);
+  };
+
+  const editContact = (index) => {
+    setEditIndex(index);
+  };
+
+  const filteredContacts = contacts.filter((contact) =>
+    contact.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Phone Book</h1>
+      <ContactForm addContact={addContact} editIndex={editIndex} contacts={contacts} />
+      <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+      <ContactList
+        contacts={filteredContacts}
+        deleteContact={deleteContact}
+        editContact={editContact}
+      />
     </div>
   );
-}
+};
 
 export default App;

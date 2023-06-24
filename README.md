@@ -17,57 +17,69 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* # React Coding Challenge No. 1
 
-### `npm run build`
+📞 React Phone Book Project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The React Phone Book project is a simple yet functional phone book application built using React. It allows users to add, edit, and delete contacts, as well as search for specific contacts. The project aims to demonstrate the use of React components, state management, and form handling.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🚀 Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get started with the React Phone Book project, follow the steps below:
 
-### `npm run eject`
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/Rubeelahmad/react-coding-challenges/tree/React-Phone-Book-Coding-Challenge
+Navigate to the project directory:
+bash
+Copy code
+cd react-phone-book
+Install the dependencies:
+Copy code
+npm install
+Start the development server:
+sql
+Copy code
+npm start
+Open your web browser and visit http://localhost:3000 to access the Phone Book application.
+📝 Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The React Phone Book application provides the following features:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Add Contact: Enter the name and phone number in the input fields and click the "Add Contact" button to add a new contact to the phone book.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Edit Contact: To edit a contact, click the "Edit" button next to the contact you wish to modify. The contact details will be populated in the input fields. Update the details and click the "Update Contact" button to save the changes.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Delete Contact: To remove a contact, click the "Delete" button next to the contact you want to delete. The contact will be removed from the phone book.
 
-## Learn More
+Search Contact: Use the search bar to enter a name or part of a name to search for specific contacts. The contact list will be dynamically filtered based on the search query.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🔧 Customization
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feel free to customize the React Phone Book project according to your specific requirements. You can modify the styling, add additional functionalities, or integrate with external APIs for more advanced features.
 
-### Code Splitting
+📚 Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The React Phone Book project utilizes the following dependencies:
 
-### Analyzing the Bundle Size
+react: JavaScript library for building user interfaces
+react-dom: React package for working with the DOM
+react-scripts: Configuration and scripts for Create React App
+prop-types: Runtime type checking for React props
+🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions to the React Phone Book project are welcome! If you have any ideas, bug fixes, or improvements, please submit a pull request. Make sure to follow the existing coding style and include appropriate tests for your changes.
 
-### Making a Progressive Web App
+📧 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+If you have any questions or suggestions regarding the React Phone Book project, please feel free to reach out to Rubeel Ahmed, a Full Stack Developer focused on React, via email at rubeel1920@gmail.com. You can also connect with Rubeel on LinkedIn to stay updated on his latest projects.
 
-### Advanced Configuration
+🌟 Start organizing your contacts with the React Phone Book application today! 📞✨
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
