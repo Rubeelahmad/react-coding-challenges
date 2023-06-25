@@ -1,54 +1,52 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-const ListComponent = () => {
-  const [items, setItems] = useState([]);
-  const [selectedItem, setSelectedItem] = useState(null);
+const CheckboxList = () => {
+  const [items, setItems] = useState([
+    { id: 1, text: "Item 1", isChecked: false },
+    { id: 2, text: "Item 2", isChecked: false },
+    { id: 3, text: "Item 3", isChecked: false },
+  ]);
 
-  const handleCheckBoxChange = (index) => {
-    setSelectedItem(index);
+  const handleCheckboxChange = (itemId) => {
+    // setItems((prevItems) =>
+    //   prevItems.map((item) =>
+    //     item.id === itemId ? { ...item, isChecked: !item.isChecked } : item
+    //   )
+    // );
+
+    //In an otherway we can write it as
+    let prevItems = items.map((item) =>
+      item.id === itemId ? { ...item, isChecked: !item.isChecked } : item
+    );
+    setItems(prevItems);
   };
 
-  const handleCreate = () => {
-    const newItem = `Item ${items.length + 1}`;
-    setItems([...items, newItem]);
-    setSelectedItem(null);
-  };
-
-  const handleDelete = () => {
-    const updatedItems = items.filter((item, index) => index !== selectedItem);
-    setItems(updatedItems);
-    setSelectedItem(null);
+  const handleDeleteClick = (itemId) => {
+    // setItems((prevItems) => prevItems.filter((item) => item.id !== itemId));
+    let filteredItems = items.filter((item) => item.id !== itemId);
+    setItems(filteredItems)
   };
 
   return (
     <div>
-      <h2>Ordered List</h2>
-      <ol>
-        {items.map((item, index) => (
-          <li key={index}>
+      <h1>Checkbox List</h1>
+      <ul>
+        {items.map((item) => (
+          <li key={item.id}>
             <input
               type="checkbox"
-              checked={index === selectedItem}
-              onChange={() => handleCheckBoxChange(index)}
+              checked={item.isChecked}
+              onChange={() => handleCheckboxChange(item.id)}
             />
-            {item}
+            {item.text}
+            {item.isChecked && (
+              <button onClick={() => handleDeleteClick(item.id)}>Delete</button>
+            )}
           </li>
         ))}
-      </ol>
-
-      {selectedItem !== null && (
-        <div>
-          <button onClick={handleCreate}>Create</button>
-        </div>
-      )}
-
-      {selectedItem !== null && (
-        <div>
-          <button onClick={handleDelete}>Delete</button>
-        </div>
-      )}
+      </ul>
     </div>
   );
 };
 
-export default ListComponent;
+export default CheckboxList;

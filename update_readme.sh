@@ -6,7 +6,7 @@ readme_file="README.md"
 description=$(cat <<EOM
 ✅ **React Checkbox List with Create and Delete Functionality**
 
-The React Checkbox List project is a simple React component that allows users to create an ordered list of items with checkboxes. It provides the ability to dynamically add new items to the list when a checkbox is selected and delete items from the list when a checkbox is deselected.
+The React Checkbox List project is a React component that allows users to create an ordered list of items with checkboxes. It provides the ability to dynamically add new items to the list when a checkbox is selected and delete items from the list when a checkbox is deselected.
 
 🚀 **Getting Started**
 
@@ -14,7 +14,7 @@ To get started with the React Checkbox List project, follow the steps below:
 
 1. **Clone the repository**:
    \`\`\`
-   git clone https://github.com/YourUsername/react-checkbox-list.git
+   git clone https://github.com/Rubeelahmad/react-coding-challenges/tree/React-Checkbox-List-with-Create-and-Delete-Functionality.git
    \`\`\`
 2. **Navigate to the project directory**:
    \`\`\`
@@ -38,7 +38,7 @@ The React Checkbox List component provides the following features:
 
 2. **Create Item**: When a checkbox is selected, a "Create" button is displayed. Clicking the "Create" button adds a new item to the list.
 
-3. **Delete Item**: When a checkbox is deselected, a "Delete" button is shown. Clicking the "Delete" button removes the selected item from the list.
+3. **Delete Item**: When a checkbox is deselected, the "Delete" button is hidden. Clicking the "Delete" button removes the selected item from the list.
 
 🔧 **Customization**
 
@@ -50,7 +50,6 @@ The React Checkbox List project utilizes the following dependencies:
 
 - **\`react\`**: JavaScript library for building user interfaces
 - **\`react-dom\`**: React package for working with the DOM
-- **\`prop-types\`**: Runtime type checking for React props
 
 🤝 **Contributing**
 
@@ -58,13 +57,13 @@ Contributions to the React Checkbox List project are welcome! If you have any id
 
 📧 **Contact**
 
-If you have any questions or suggestions regarding the React Checkbox List project, please feel free to reach out to **Your Name** via email at **your.email@example.com**. You can also connect with me on [LinkedIn](https://www.linkedin.com/in/yourname) to stay updated on my latest projects.
+If you have any questions or suggestions regarding the React Checkbox List project, please feel free to reach out to **Rubeel Ahmed** via email at **rubeel1920@gmail.com**. You can also connect with me on [LinkedIn](https://www.linkedin.com/in/rubeel-ahmed-32944b199/) to stay updated on my latest projects.
 
 🌟 Start creating and managing your checkbox list with the **React Checkbox List component** today! ✅✨
 EOM
 )
 
-# Copy the description to the README.md file
+# Update the README.md file with the description
 echo "$description" > "$readme_file"
 
 # Print success message
